@@ -45,24 +45,24 @@ export default function Home() {
   return (
     <>
       {/* Add Income Modal */}
-      <AddIncomeModal
+      <AddIncomeModal className="flex-auto"
         show={showAddIncomeModal}
         onClose={setShowAddIncomeModal}
       />
 
       {/* Add Expenses Modal */}
-      <AddExpensesModal
+      <AddExpensesModal className="flex-auto"
         show={showAddExpenseModal}
         onClose={setShowAddExpenseModal}
       />
 
-      <main className="container max-w-2xl px-6 mx-auto">
+      <main className="container max-w-2xl px-6 mx-auto flex-auto">
         <section className="py-3">
-          <small className="text-gray-400 text-md">My Balance</small>
-          <h2 className="text-4xl font-bold">{currencyFormatter(balance)}</h2>
+          <small className="text-slate-900 text-xl flex-auto">My Balance</small>
+          <h2 className="text-4xl font-bold flex-auto">{currencyFormatter(balance)}</h2>
         </section>
 
-        <section className="flex items-center gap-2 py-3">
+        <section className="flex auto items-center gap-2 py-3">
           <button
             onClick={() => {
               setShowAddExpenseModal(true);
@@ -104,7 +104,7 @@ export default function Home() {
                     label: "Expenses",
                     data: expenses.map((expense) => expense.total),
                     backgroundColor: expenses.map((expense) => expense.color),
-                    borderColor: ["#18181b"],
+                    borderColor: ["#00000"],
                     borderWidth: 5,
                   },
                 ],

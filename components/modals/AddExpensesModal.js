@@ -71,7 +71,7 @@ function AddExpensesModal({ show, onClose }) {
       <div className="flex flex-col gap-4">
         <label>Enter an amount..</label>
         <input
-        className="bg-slate-200"
+        className="bg-slate-200 "
           type="number"
           min={0.01}
           step={0.01}
@@ -84,7 +84,7 @@ function AddExpensesModal({ show, onClose }) {
       </div>
 
       {/* Expense Categories */}
-      {expenseAmount > 0 && (
+      
         <div className="flex flex-col gap-4 mt-6">
           <div className="flex items-center justify-between">
             <h3 className="text-2xl capitalize">Select expense category</h3>
@@ -151,7 +151,7 @@ function AddExpensesModal({ show, onClose }) {
             );
           })}
         </div>
-      )}
+      
 
       {expenseAmount > 0 && selectedCategory && (
         <div className="mt-6">

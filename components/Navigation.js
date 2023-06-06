@@ -16,7 +16,7 @@ function Nav() {
             {/* img */}
             <div className="h-[40px] w-[40px] rounded-full overflow-hidden">
               <img
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full flex-auto"
                 src={user.photoURL}
                 alt={user.displayName}
                 referrerPolicy="no-referrer"
@@ -24,7 +24,7 @@ function Nav() {
             </div>
 
             {/* name */}
-            <small>Hi, {user.displayName}!</small>
+            <small className="text-2xl ">Hi, {user.displayName}!</small>
           </div>
         )}
 
@@ -37,7 +37,7 @@ function Nav() {
               </a>
             </div>
             <div>
-              <button onClick={logout} className="btn btn-danger">
+              <button onClick={logout} className="btn btn-danger flex-auto">
                 Sign out
               </button>
             </div>
