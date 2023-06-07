@@ -43,21 +43,24 @@ To run the Finance Tracker app locally, follow these steps:
    ```bash
    git clone https://github.com/Shashank-1302/finance-tracker.git
 2. Navigate to the project directory:
+    ```bash
     cd finance-tracker
 3. Install the dependencies:
-    npm install
+   ```bash
+   npm install
 4. Start the development server:
+    ```bash
     npm run dev
 5. Open your browser and visit http://localhost:3000 to access the app.
 
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to create an issue or submit a pull request.
 
 Please make sure to follow the Contributing Guidelines when contributing to this project.
 
-##License
+## License
 The Finance Tracker app is open-source and released under the MIT License.
 
 
