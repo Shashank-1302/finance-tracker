@@ -27,12 +27,9 @@ The Finance Tracker app is built using the following technologies:
   - Next.js: React framework for server-side rendering and static site generation
   - Chart.js: JavaScript charting library for data visualization
   - Tailwind CSS: Utility-first CSS framework for responsive design
-  - Axios: HTTP client for making API requests
 
 - Back-end:
-  - Node.js: JavaScript runtime environment
-  - Express: Web application framework for Node.js
-  - MongoDB: NoSQL database for storing financial data
+  - Google Firebase: For Storing Data and authentication of user
 
 ## Installation
 
