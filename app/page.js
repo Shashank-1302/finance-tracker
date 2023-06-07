@@ -13,7 +13,7 @@ import AddExpensesModal from "@/components/modals/AddExpensesModal";
 import SignIn from "@/components/SignIn";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Doughnut } from "react-chartjs-2";
+import { Doughnut, PolarArea  } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -96,7 +96,7 @@ export default function Home() {
           <a id="stats" />
           <h3 className="text-2xl">Stats</h3>
           <div className="w-1/2 mx-auto">
-            <Doughnut
+            <Doughnut 
               data={{
                 labels: expenses.map((expense) => expense.title),
                 datasets: [
@@ -104,7 +104,7 @@ export default function Home() {
                     label: "Expenses",
                     data: expenses.map((expense) => expense.total),
                     backgroundColor: expenses.map((expense) => expense.color),
-                    borderColor: ["#00000"],
+                    borderColor: ["#000000"],
                     borderWidth: 5,
                   },
                 ],

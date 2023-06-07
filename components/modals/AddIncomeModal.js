@@ -57,7 +57,7 @@ function AddIncomeModal({ show, onClose }) {
         <div className="input-group">
           <label htmlFor="amount">Income Amount</label>
           <input
-          className="bg-slate-200"
+          className="bg-slate-200 drop-shadow-lg"
             type="number"
             name="amount"
             ref={amountRef}
@@ -71,7 +71,7 @@ function AddIncomeModal({ show, onClose }) {
         <div className="input-group">
           <label htmlFor="description">Description</label>
           <input
-            className="bg-slate-200"
+            className="bg-slate-200 drop-shadow-lg"
             name="description"
             ref={descriptionRef}
             type="text"
@@ -80,7 +80,7 @@ function AddIncomeModal({ show, onClose }) {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary drop-shadow-lg">
           Add entry
         </button>
       </form>
@@ -93,7 +93,7 @@ function AddIncomeModal({ show, onClose }) {
             <div className="flex justify-between item-center" key={i.id}>
               <div>
                 <p className="font-semibold">{i.description}</p>
-                <small className="text-xs">{i.createdAt.toISOString()}</small>
+                <small className="text-xs">{i.createdAt.toLocaleDateString()}</small>
               </div>
               <p className="flex items-center gap-2">
                 {currencyFormatter(i.amount)}

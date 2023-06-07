@@ -71,7 +71,7 @@ function AddExpensesModal({ show, onClose }) {
       <div className="flex flex-col gap-4">
         <label>Enter an amount..</label>
         <input
-        className="bg-slate-200 "
+        className="bg-slate-200 drop-shadow-lg "
           type="number"
           min={0.01}
           step={0.01}
@@ -87,7 +87,7 @@ function AddExpensesModal({ show, onClose }) {
       
         <div className="flex flex-col gap-4 mt-6">
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl capitalize">Select expense category</h3>
+            <h3 className="text-2xl capitalize font-semibold">Select expense category</h3>
             <button
               onClick={() => {
                 setShowAddExpense(true);
@@ -123,7 +123,7 @@ function AddExpensesModal({ show, onClose }) {
 
           {expenses.map((expense) => {
             return (
-              <button
+              <button className="drop-shadow-lg"
                 key={expense.id}
                 onClick={() => {
                   setSelectedCategory(expense.id);
@@ -155,7 +155,7 @@ function AddExpensesModal({ show, onClose }) {
 
       {expenseAmount > 0 && selectedCategory && (
         <div className="mt-6">
-          <button className="btn btn-primary" onClick={addExpenseItemHandler}>
+          <button className="btn btn-primary drop-shadow-lg" onClick={addExpenseItemHandler}>
             Add Expense
           </button>
         </div>

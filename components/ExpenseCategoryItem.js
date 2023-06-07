@@ -19,7 +19,7 @@ function ExpenseCategoryItem({ expense }) {
           setViewExpenseModal(true);
         }}
       >
-        <div className="flex items-center justify-between px-4 py-4 bg-slate-800 rounded-3xl text-white">
+        <div className="flex items-center justify-between px-4 py-4 bg-slate-800 rounded-3xl text-white drop-shadow-lg">
           <div className="flex items-center gap-2">
             <div
               className="w-[25px] h-[25px] rounded-full"
