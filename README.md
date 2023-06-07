@@ -61,7 +61,7 @@ Contributions are welcome! If you have any suggestions, improvements, or bug fix
 Please make sure to follow the Contributing Guidelines when contributing to this project.
 
 ## License
-The Finance Tracker app is open-source and released under the MIT License.
+The Finance Tracker app is open-source and released under the [MIT License](LICENSE).
 
 
 Feel free to modify the content to suit your specific needs.
