@@ -13,7 +13,7 @@ import AddExpensesModal from "@/components/modals/AddExpensesModal";
 import SignIn from "@/components/SignIn";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Doughnut, PolarArea  } from "react-chartjs-2";
+import { Doughnut, PolarArea } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -45,13 +45,15 @@ export default function Home() {
   return (
     <>
       {/* Add Income Modal */}
-      <AddIncomeModal className="flex-auto"
+      <AddIncomeModal
+        className="flex-auto"
         show={showAddIncomeModal}
         onClose={setShowAddIncomeModal}
       />
 
       {/* Add Expenses Modal */}
-      <AddExpensesModal className="flex-auto"
+      <AddExpensesModal
+        className="flex-auto"
         show={showAddExpenseModal}
         onClose={setShowAddExpenseModal}
       />
@@ -62,7 +64,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold flex-auto">{currencyFormatter(balance)}</h2>
         </section>
 
-        <section className="flex auto items-center gap-2 py-3">
+        <section className="flex flex-col gap-2 py-3 md:flex-row md:justify-between">
           <button
             onClick={() => {
               setShowAddExpenseModal(true);
@@ -86,7 +88,7 @@ export default function Home() {
           <h3 className="text-2xl">My Expenses</h3>
           <div className="flex flex-col gap-4 mt-6">
             {expenses.map((expense) => {
-              return <ExpenseCategoryItem key={expense.id} expense={expense}  />;
+              return <ExpenseCategoryItem key={expense.id} expense={expense} />;
             })}
           </div>
         </section>
@@ -95,8 +97,8 @@ export default function Home() {
         <section className="py-6">
           <a id="stats" />
           <h3 className="text-2xl">Stats</h3>
-          <div className="w-1/2 mx-auto">
-            <Doughnut 
+          <div className="w-full md:w-1/2 mx-auto">
+            <Doughnut
               data={{
                 labels: expenses.map((expense) => expense.title),
                 datasets: [
