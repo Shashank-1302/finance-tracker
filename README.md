@@ -51,16 +51,14 @@ To run the Finance Tracker app locally, follow these steps:
 5. Open your browser and visit http://localhost:3000 to access the app.
 
 
-## Contributing
-
-Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to create an issue or submit a pull request.
-
-Please make sure to follow the Contributing Guidelines when contributing to this project.
-
 ## License
 The Finance Tracker app is open-source and released under the [MIT License](LICENSE).
 
+## Contributors
+👥 The following individuals have contributed to the development of the Finance Tracker app:
 
-Feel free to modify the content to suit your specific needs.
+- Shashank ([GitHub](https://github.com/Shashank-1302))
+
+
 
 

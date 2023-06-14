@@ -14,9 +14,7 @@ import { toast } from "react-toastify";
 function AddIncomeModal({ show, onClose }) {
   const amountRef = useRef();
   const descriptionRef = useRef();
-  const { income, addIncomeItem, removeIncomeItem } =
-    useContext(financeContext);
-
+  const { income, addIncomeItem, removeIncomeItem } = useContext(financeContext);
   const { user } = useContext(authContext);
 
   // Handler Functions
@@ -57,7 +55,7 @@ function AddIncomeModal({ show, onClose }) {
         <div className="input-group">
           <label htmlFor="amount">Income Amount</label>
           <input
-          className="bg-slate-200 drop-shadow-lg"
+            className="bg-slate-200 drop-shadow-lg"
             type="number"
             name="amount"
             ref={amountRef}
@@ -93,7 +91,9 @@ function AddIncomeModal({ show, onClose }) {
             <div className="flex justify-between item-center" key={i.id}>
               <div>
                 <p className="font-semibold">{i.description}</p>
-                <small className="text-xs">{i.createdAt.toLocaleDateString()}</small>
+                <small className="text-xs">
+                  {i.createdAt.toLocaleDateString()}
+                </small>
               </div>
               <p className="flex items-center gap-2">
                 {currencyFormatter(i.amount)}
